@@ -6,7 +6,7 @@ This project was built as a practical coding challenge to reinforce core Go conc
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The **Go User Profile Generator CLI** is a simple command-line tool that allows a user to:
 
@@ -21,7 +21,7 @@ The goal of this project is to practice foundational Go programming concepts in 
 
 ---
 
-## 🎯 What This Project Teaches
+## What This Project Teaches
 
 This project helps reinforce the following Go concepts:
 
@@ -42,7 +42,7 @@ This project helps reinforce the following Go concepts:
 
 ---
 
-## ⚙️ Features
+## Features
 
 ### 1. User Name Collection
 The program asks the user for their first and last names and combines both into a full name.
