@@ -160,6 +160,7 @@ go run .
 
 ## Sample Output
 
+```output
 Welcome to Golf Club Membership Checker
 
 Enter first name: Kesiah  
@@ -173,6 +174,7 @@ Phone: 1234567890
 
 --- MEMBERSHIP CHECK ---
 Status: 🟢 Premium Golf Club Member
+```
 
 ---
 
