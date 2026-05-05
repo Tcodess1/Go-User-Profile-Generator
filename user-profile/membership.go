@@ -2,35 +2,35 @@ package main
 
 import "fmt"
 
-func checkMembership(user User) {
-	fmt.Println("\n--- USER SUMMARY ---")
-	fmt.Println("Name:", user.FullName)
-	fmt.Println("Email:", user.Email)
-	fmt.Println("Phone:", user.Phone)
+func checkLatestUser() {
+	if len(users) == 0 {
+		fmt.Println("No users available")
+		return
+	}
 
-	fmt.Println("\n--- MEMBERSHIP CHECK ---")
+	user := users[len(users)-1]
 
 	score := 0
 
-	// Rule 1: email check (basic validation)
-	if len(user.Email) > 10 {
-		score++
-	}
-
-	// Rule 2: phone strength
-	if user.Phone > 1000000000 {
-		score++
-	}
-
-	// Rule 3: name strength
 	if len(user.FullName) > 10 {
 		score++
 	}
 
-	// Decision
-	if score >= 2 {
-		fmt.Println("Status: 🟢 Premium Golf Club Member")
+	if len(user.Email) > 10 {
+		score++
+	}
+
+	if len(user.Phone) > 8 {
+		score++
+	}
+
+	fmt.Println("\n--- MEMBERSHIP RESULT ---")
+
+	if score >= 3 {
+		fmt.Println("🟢 Gold Member")
+	} else if score == 2 {
+		fmt.Println("🟡 Silver Member")
 	} else {
-		fmt.Println("Status: 🟡 Regular Member")
+		fmt.Println("🔴 Bronze Member")
 	}
 }

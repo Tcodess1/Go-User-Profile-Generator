@@ -38,3 +38,17 @@ func createUserFlow() {
 
 	fmt.Println("User created successfully!")
 }
+
+func showAllUsers() {
+	if len(users) == 0 {
+		fmt.Println("No users found.")
+		return
+	}
+
+	for i, u := range users {
+		fmt.Println("\nUser", i+1)
+		fmt.Println("Name:", u.FullName)
+		fmt.Println("Email:", u.Email)
+		fmt.Println("Phone:", u.Phone)
+	}
+}
